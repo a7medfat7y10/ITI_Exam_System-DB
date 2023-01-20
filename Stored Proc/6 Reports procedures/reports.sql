@@ -6,29 +6,29 @@ select * from student where dept_id = @dept_id
 getStudentsByDept 2
 
 --2-
-create proc getStudentGrades @st_id int
+alter proc getStudentGrades @st_id int
 as
-select c.course_name, sum(t.std_grade) from Take_exam t, Exam e, course c where t.st_id = @st_id
+select c.course_name, sum(t.std_grade),st_id from Take_exam t, Exam e, course c where t.st_id = @st_id
 and e.Exam_id = t.Exam_id and c.crs_id = e.crs_id
-group by c.course_name
+group by c.course_name,st_id
 
 getStudentGrades 3
 use EXAM
 --3--
-create proc getInstructorInfo @ins_id int
+alter proc getInstructorInfo @ins_id int
 as
-select c.course_name , count(sc.st_id) 
+select c.course_name , count(sc.st_id) , ins_name
 from instructor i, instructor_course ic, course c, student_course sc
 where c.crs_id= sc.crs_id and i.ins_id = ic.ins_id and ic.crs_id = c.crs_id and 
 i.ins_id = @ins_id
-group by c.course_name
+group by c.course_name,ins_name
 
 getInstructorInfo 1
 
 --4-
-create proc getTopics @crs_id int
+alter proc getTopics @crs_id int
 as
-select t.topic_name
+select t.topic_name , course_name
 	from course c
 	inner join Topic t
 	on c.crs_id = t.crs_id
@@ -50,6 +50,7 @@ select eq.Exam_id ,q.Q_content, q.type, qc.choices, q.Q_correct_answer from Exam
 
 
 	PrintExam 34
+	 
 	PrintExam 36
 
 

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33214.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Exam System Project", "Exam System Project.rptproj", "{208188DB-BB18-4705-AC34-4FA2F06B380A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{208188DB-BB18-4705-AC34-4FA2F06B380A}.Debug|Default.ActiveCfg = Debug
+		{208188DB-BB18-4705-AC34-4FA2F06B380A}.Debug|Default.Build.0 = Debug
+		{208188DB-BB18-4705-AC34-4FA2F06B380A}.Debug|Default.Deploy.0 = Debug
+		{208188DB-BB18-4705-AC34-4FA2F06B380A}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{208188DB-BB18-4705-AC34-4FA2F06B380A}.DebugLocal|Default.Build.0 = DebugLocal
+		{208188DB-BB18-4705-AC34-4FA2F06B380A}.DebugLocal|Default.Deploy.0 = DebugLocal
+		{208188DB-BB18-4705-AC34-4FA2F06B380A}.Release|Default.ActiveCfg = Release
+		{208188DB-BB18-4705-AC34-4FA2F06B380A}.Release|Default.Build.0 = Release
+		{208188DB-BB18-4705-AC34-4FA2F06B380A}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C0F8B64-1CE2-48DE-B577-A67B9780A0A3}
+	EndGlobalSection
+EndGlobal
